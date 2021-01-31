@@ -1,0 +1,121 @@
+
+#n-fb-m { margin: auto; height: 550px; width: 550px; background: #F0F2F5; border: 1px solid #F0F2F5; } #n-fb-m .tb { position: relative; left: 0; top: 0; background: #fff; width: 100%; height: 40px; overflow: hidden; } #n-fb-m .tb .lg { position: absolute; top: 5px; left: 5px; display: block; } #n-fb-m .tb .lg img { height: 30px; width: 30px; object-fit: cover; } #n-fb-m .tb .sr { position: absolute; display: block; margin: 10px 10px 10px 50px; width: 125px; background: #F0F2F5; height: 20px; padding: 2px 10px; line-height: 20px; border-radius: 10%; cursor: pointer; font-size: 10px; font: arial; text-indent: 5px; letter-spacing: 0.4px; } #n-fb-m .tb .nv { position: absolute; right: 5px; top: 5px; height: 30px; text-align: center; } #n-fb-m .tb .nv .bt-i { display: inline; float: left; margin-top: 3px;} #n-fb-m .tb .nv .bt-i img { height: 25px; width: 25px; border-radius: 50%; object-fit: cover; } #n-fb-m .tb .nv .bt-p { display: inline; float: left; margin-left: 5px; margin-top: 6px; } #n-fb-m .tb .nv .bt-p a { text-decoration: none; transition: 2s; color: #000; font-size: 11px; font-family: arial; font-weight: bold; padding: 5px; border-radius: 25%; line-height: 20px; } #n-fb-ms .tb .nv .bt-p a:hover { background: #F0F2F5; transition: 2s; } #n-fb-m .tb .nv .bt-m { display: inline; float: left; margin-left: 10px; margin-top: 1px; background-image: url(https://img.icons8.com/ios/30/000000/facebook-messenger--v1.png); height: 30px; width: 30px; transition: 1s; background-size: 30px 30px;  }
+
+#n-fb-m .tb .nv .bt-m:hover {background-image:url(https://i.ibb.co/1JQPmt7/icons8-facebook-messenger.gif); transition: 1s; }
+
+#n-fb-m .tb .nv .bt-m img:hover {opacity: 0;}
+
+#n-fb-m .body {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#n-fb-m .body .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#n-fb-m .body .pt {
+  float: left;
+  display: block;
+}
+
+#n-fb-m .body .inf {
+  width: 180px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-right: 20px;
+}
+
+#n-fb-m .body .inf .rw {
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+  height: 30px;
+  border-radius: 5% 0 0 5%;
+  transition: 1s;
+}
+
+#n-fb-m .body .inf .rw img {
+  float: left;
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+#n-fb-m .body .inf span {
+  float: left;
+  line-height: 30px;
+  margin-left: 2px;
+  font-size: 11px; font-family: arial; font-weight: bold; color: #000;
+}
+
+#n-fb-m .body .inf .rw:hover {
+  background: #E4E6E9;
+  transition: 2s;
+}
+
+#n-fb-m .body .inf hr {
+  border-top: 1px solid #5D5D5D;
+  margin: 10px 10px;
+}
+
+#n-fb-m .body .scroll {
+  width: 250px;
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  left: 200px;
+}
+
+#n-fb-m .body input {display: none}
+
+#n-fb-m .body label {
+  display: block;
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+  height: 30px;
+  border-radius: 5% 0 0 5%;
+  transition: 1s;
+}
+
+#n-fb-m .body label img {
+  float: left;
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+  margin: 5px;
+}
+
+#n-fb-m .body label:hover {
+  background: #E4E6E9;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#n-fb-m .body .scroll .tb {
+  height: 500px;
+  width: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #F0F2F5;
+}
+
+#n-fb-m .body .tml { opacity: 1; }
+#n-fb-m .body .pgs { opacity: 0; }
+#n-fb-m .body .frns { opacity: 0; }
+#n-fb-m .body .pht { opacity: 0; }
+#n-fb-m .body .mng { opacity: 0; }
+#n-fb-m .body input:checked+label {background: #E4E6E9;}
+#timeline input[type=radio]:checked~label ~ .tml {opacity:1;z-index:2;}
+#pages input[type=radio]:checked~label~.pgs{opacity:1;z-index:2}
+#friends input[type=radio]:checked~label~.frns{opacity:1;z-index:2}
+#photos input[type=radio]:checked~label~#n-fb-m .body .scroll .pht{opacity:1;z-index:2}
+#manage input[type=radio]:checked~label~#n-fb-m .body .scroll .mng{opacity:1;z-index:2}
